@@ -2,8 +2,6 @@
 
   MVP-Focused Executive Summary for Marketing Team Autonomy
 
-  Executive Summary
-
   This revised strategy outlines a simplified, Marketing-centric agentic workflow designed to empower the Marketing team to autonomously prototype and test campaign ideas without requiring Design or Engineering support. The MVP focuses on cost-effective tools, intuitive workflows, and robust guardrails to enable safe experimentation while demonstrating
   measurable value to leadership.
 
@@ -12,42 +10,42 @@
   Consolidated Core Agents (4 Agents vs. Original 8)
 
   ### Web Acquisition Agent
-  - Primary Function: Scrape and organize website assets for Marketing prototyping
-  - Tools: Playwright for dynamic content, Cheerio for static parsing
-  - Marketing-Focused Capabilities:
+  - __Primary Function__: Scrape and organize website assets for Marketing prototyping
+  - __Tools__: Playwright for dynamic content, Cheerio for static parsing
+  - __Marketing-Focused Capabilities__:
     - One-click website capture with progress indicators
     - Automatic asset organization with clear file structure
-    - Built-in compliance checks (robots.txt, ToS respect)
+    - Built-in compliance checks on sites other than our organizations(robots.txt, ToS respect)
     - Clear error messages for non-technical users
-  - Output: Ready-to-edit local website package with status dashboard
+  - __Output__: Ready-to-edit local website package with status dashboard
 
   ### Local Preview Agent
-  - Primary Function: Provide real-time preview environment for Marketing experimentation
-  - Tools: Lightweight http-server with auto-refresh capabilities
-  - Marketing-Focused Capabilities:
+  - __Primary Function__: Provide real-time preview environment for Marketing experimentation
+  - __Tools__: Lightweight http-server with auto-refresh capabilities
+  - __Marketing-Focused Capabilities__:
     - Instant preview updates as Marketing makes changes
     - Mobile/desktop view toggle
-    - Clear "PROTOTYPE - NOT PRODUCTION" watermarking
     - Undo/redo functionality with visual change history
-  - Output: Safe, isolated preview environment with change tracking
+  - __Output__: Safe, isolated preview environment with change tracking
 
   ### Design Optimization Agent (Consolidated from Design Generation + Evaluation)
-  - Primary Function: Generate 1-2 optimized solutions for Marketing requests
-  - Marketing-Focused Capabilities:
+  - __Primary Function__: Generate 1-2 optimized solutions for Marketing requests
+  - __Marketing-Focused Capabilities__:
     - Natural language interpretation of Marketing requests
+    - __(Future phase)__ Zion UI Storybook integration
     - Generate simple A/B options with clear visual differences
-    - Automated accessibility and responsiveness validation
     - Before/after comparisons with impact summaries
-  - Output: Marketing-friendly design options with implementation guidance
+    - Automated accessibility and responsiveness validation
+  - __Output__: Marketing-friendly design options with implementation guidance
 
   ### Documentation & Handoff Agent
-  - Primary Function: Create Marketing-to-Dev handoff materials
-  - Marketing-Focused Capabilities:
+  - __Primary Function__: Create Marketing-to-Dev handoff materials
+  - __Marketing-Focused Capabilities__:
     - Generate simple before/after visual documentation
     - Create plain-English implementation instructions
     - Export prototype specifications for Design/Engineering teams
     - Track and summarize all changes made during prototype session
-  - Output: Developer-ready handoff package with Marketing context
+  - __Output__: Developer-ready handoff package with Marketing context
 
   ## Marketing-Centric Workflow Orchestration
 
@@ -55,89 +53,90 @@
 
   ### Phase 1: Quick Setup (Self-Service)
   Marketing Team → Paste URL → Web Acquisition Agent → Ready-to-Edit Preview
-  - Time Target: Under 2 minutes
-  - User Experience: Progress bar, clear status updates, automatic error recovery
-  - Guardrails: Compliance validation, site complexity warnings
+  - __Time Target__: Under 2 minutes
+  - __User Experience__: Progress bar, clear status updates, automatic error recovery
+  - __Guardrails__: Compliance validation, site complexity warnings
 
   ### Phase 2: Safe Experimentation (Autonomous Prototyping)
   Marketing Ideas → Natural Language Input → Design Optimization Agent → A/B Preview Options → Marketing Selection & Iteration
-  - Time Target: 5-10 minutes per modification cycle
-  - User Experience: Drag-and-drop interface, live preview, instant undo/redo
-  - Guardrails: Change impact warnings, rollback safety, "prototype" watermarking
+  - __Time Target__: 5-10 minutes per modification cycle
+  - __User Experience__: Drag-and-drop interface, live preview, instant undo/redo
+  - __Guardrails__: Change impact warnings, rollback safety, "prototype" watermarking
 
   ### Phase 3: Team Handoff (Automated Documentation)
+
   Approved Prototype → Documentation Agent → Design/Engineering Package → Stakeholder Review
-  - Time Target: Under 1 minute for documentation generation
-  - User Experience: One-click export, automated change summaries
-  - Guardrails: Clear prototype-to-production disclaimers
+  
+  - __Time Target__: Under 1 minute for documentation generation
+  - __User Experience__: One-click export, automated change summaries
+  - __Guardrails__: Clear prototype-to-production disclaimers
 
   ## Cost-Effective MVP Technology Stack
 
   Optimized Tool Selection
 
-  - Backend: Node.js with minimal Express setup
-  - Scraping: Open-source Playwright + Cheerio (no premium APIs)
-  - Local Server: http-server (lightweight, reliable)
-  - AI Integration: Fine-tuned in-house models vs. expensive API calls
-  - Storage: Local file system with structured project directories
-  - UI Framework: React with simple component library
+  - __Backend__: Node.js with minimal Express setup
+  - __Scraping__: Open-source Playwright + Cheerio (no premium APIs)
+  - __Local Server__: http-server (lightweight, reliable)
+  - __AI Integration__: Fine-tuned in-house models vs. expensive API calls
+  - __Storage__: Local file system with structured project directories
+  - __UI Framework__: React with simple component library
 
   Infrastructure Approach
 
-  - Development: Local-first with optional cloud sync
-  - Deployment: Docker containers for consistency
-  - Monitoring: Basic usage analytics and error tracking
-  - Scaling: Designed for 10-50 concurrent Marketing users
+  - __Development__: Local-first with optional cloud sync
+  - __Deployment__: Docker containers for consistency
+  - __Monitoring__: Basic usage analytics and error tracking
+  - __Scaling__: Designed for 1-10 concurrent Marketing users
 
   ## Non-Technical User Experience Design
 
   Marketing Team-Focused Interface
 
-  - Dashboard: Project gallery with thumbnail previews
-  - Guided Workflows: Step-by-step wizards with contextual help
-  - Visual Feedback: Real-time preview with change highlighting
-  - Error Handling: Plain-English error messages with suggested fixes
-  - Help System: In-app tooltips, video tutorials, FAQ integration
+  - __Dashboard__: Project gallery with thumbnail previews
+  - __Guided Workflows__: Step-by-step wizards with contextual help
+  - __Visual Feedback__: Real-time preview with change highlighting
+  - __Error Handling__: Plain-English error messages with suggested fixes
+  - __Help System__: In-app tooltips, video tutorials, FAQ integration
 
   Safety & Compliance Features
 
-  - Prototype Isolation: Clear separation from production environments
-  - Legal Compliance: Automated robots.txt and ToS checking
-  - Change Tracking: Complete audit trail of all modifications
-  - Rollback Protection: One-click return to any previous state
-  - Team Notifications: Optional alerts for Design/Engineering teams
+  - __Prototype Isolation__: Clear separation from production environments
+  - __Legal Compliance__: Automated robots.txt and ToS checking where needed
+  - __Change Tracking__: Complete audit trail of all modifications
+  - __Rollback Protection__: One-click return to any previous state
+  - __Team Notifications__: Optional alerts for Design/Engineering teams
 
   ## Training & Support Strategy
 
   Onboarding Program
 
-  - Initial Training: 2-hour hands-on workshop for Marketing team
-  - Documentation: Video tutorials, quick-start guides, FAQ
-  - Support Channel: Dedicated Slack channel with Engineering backup
-  - Feedback Loop: Weekly check-ins during first month
+  - __Initial Training__: 2-hour hands-on workshop for Marketing team
+  - __Documentation__: Video tutorials, quick-start guides, FAQ
+  - __Support Channel__: Dedicated Slack channel with Engineering backup
+  - __Feedback Loop__: Weekly check-ins during first month
 
   Success Metrics & Iteration
 
-  - Usage Analytics: Track adoption, feature usage, error rates
-  - Marketing Feedback: Regular surveys on tool effectiveness
-  - Business Impact: Campaign ideation speed, prototype-to-production conversion
-  - Cost Tracking: Development time saved, tool ROI measurement
+  - __Usage Analytics__: Track adoption, feature usage, error rates
+  - __Marketing Feedback__: Regular surveys on tool effectiveness
+  - __Business Impact__: Campaign ideation speed, prototype-to-production conversion
+  - __Cost Tracking__: Development time saved, tool ROI measurement
 
   ## Risk Mitigation & Compliance
 
   Technical Safeguards
 
-  - Prototype Watermarking: Clear "NOT PRODUCTION" labeling
-  - Access Controls: Marketing-only prototype environments
-  - Legal Compliance: Automated checking of scraping permissions
-  - Data Security: Local-first storage, no sensitive data exposure
+  - __Access Controls__: Marketing-only prototype environments
+  - __Legal Compliance__: Automated checking of scraping permissions
+  - __Data Security__: Local-first storage, no sensitive data exposure
 
   Business Risk Management
 
-  - Change Reversibility: 100% rollback capability for all modifications
-  - Production Isolation: Impossible to accidentally publish prototypes
-  - Quality Gates: Automated accessibility and responsiveness validation
-  - Stakeholder Communication: Clear handoff processes to Design/Engineering
+  - __Change Reversibility__: 100% rollback capability for all modifications
+  - __Production Isolation__: Impossible to accidentally publish prototypes
+  - __Quality Gates__: Automated accessibility and responsiveness validation
+  - __Stakeholder Communication__: Clear handoff processes to Design/Engineering
 
   ## MVP Success Criteria & Future Roadmap
 

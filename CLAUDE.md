@@ -29,9 +29,9 @@ jupyter lab
 ### Core Agent System (4 Specialized Agents)
 
 1. **Web Acquisition Agent**
-   - Scrapes and organizes website assets using Playwright for dynamic content, Cheerio for static parsing
-   - Provides one-click website capture with compliance checks (robots.txt, ToS respect)
-   - Outputs organized local website packages
+   - Scrapes and organizes website assets using process-isolated Playwright for React/JS sites
+   - Provides one-click website capture optimized for internal organizational sites
+   - Outputs organized local website packages with comprehensive data extraction
 
 2. **Local Preview Agent** 
    - Provides real-time preview environment using lightweight http-server
@@ -59,8 +59,8 @@ jupyter lab
 
 ## Technology Stack
 
-- **Backend**: Node.js with minimal Express setup (planned)
-- **Scraping**: Playwright + Cheerio (open-source, no premium APIs)
+- **Backend**: Python-based with multiprocessing for React site compatibility
+- **Scraping**: Process-isolated Playwright (optimized for React/JS sites)
 - **Local Server**: http-server (lightweight, reliable)
 - **AI Integration**: Multiple providers supported (Anthropic, OpenAI, etc.)
 - **Storage**: Local file system with structured project directories
@@ -98,9 +98,9 @@ The project is in early development phase with:
 
 1. **Marketing Team Autonomy** - All workflows designed for non-technical users
 2. **Cost-Effectiveness** - Prioritize open-source tools over expensive APIs  
-3. **Safety & Compliance** - Built-in guardrails for legal compliance and safe experimentation
+3. **Internal-Only Scope** - Optimized for organizational websites without external compliance overhead
 4. **Prototype Isolation** - Clear separation from production environments
-5. **Change Reversibility** - 100% rollback capability for all modifications
+5. **Technical Reliability** - Process-isolated architecture for React/JS site compatibility
 
 ## Development Guidelines
 
